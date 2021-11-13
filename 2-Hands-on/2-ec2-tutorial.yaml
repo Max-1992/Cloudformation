@@ -1,0 +1,12 @@
+---
+# Siempre se define el atributo 'Resource' para declarar un recurso.
+Resource:
+  # Se le asigna un nombre al recursos creado.
+  MyInstance:
+    # Se especifica el tipo de recursos que se quiere crear.
+    Type: AWS::EC2::Instance
+    Properties:
+      # Se declaran todas las propiedades requeridad para crea el recurso estas pueden variar dependiendo del recurso que se quiera crear.
+      AvailabilityZone: us-east-1a
+      ImageId: ami-a4c7edb2
+      InstanceType: t2.micro
